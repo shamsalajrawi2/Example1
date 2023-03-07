@@ -1,0 +1,19 @@
+Add
+To add a file to the repository, we can use the add command. Open your Git command tool (Git Bash or Terminal for example) and use the cd command to navigate to your local repository.
+
+cd '[path to directory]'
+Once you are there, you can run the following command:
+
+git add --all
+The use of the --all parameter ensures that all files in all subdirectories will be staged, including new files, modified files, and any files removed from the repository.
+
+It is important to note that even though a file may physically exist in the directory, it will not be tracked by Git and included in your repository until it is "added" to the repository using the add command, so you should always run git add before running git commit.
+
+Commit
+The git commit command will create a new save point in the history of the repository. These are the points we review and care about when it comes to the repository. They provide the save points in the repository that allow us to return to the exact state of the files as they existed at that moment we did the commit.
+
+git commit -m "[MESSAGE]"
+Replace in the command above with your own description for this save point in the repository. This should be a relatively short message that explains why you are committing this code or what state the code is in at that point in time. For example, if you have just added a Contact page to a website, an appropriate commit command might look like:
+
+git commit -m "new contact page in website"
+Whether you are describing a new feature you added or a bug that you fixed, this information will help you and your collaborators understand the purpose of the changes.
